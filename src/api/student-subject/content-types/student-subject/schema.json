@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_subjects",
+  "info": {
+    "singularName": "student-subject",
+    "pluralName": "student-subjects",
+    "displayName": "Student Subject",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "classroom": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "reason": {
+      "type": "richtext"
+    },
+    "subject_option": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject-option.subject-option",
+      "inversedBy": "student_subjects"
+    },
+    "nis": {
+      "type": "integer"
+    }
+  }
+}

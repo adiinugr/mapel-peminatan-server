@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subject_options",
+  "info": {
+    "singularName": "subject-option",
+    "pluralName": "subject-options",
+    "displayName": "Subject Option",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "subject1": {
+      "type": "string"
+    },
+    "subject2": {
+      "type": "string"
+    },
+    "subject3": {
+      "type": "string"
+    },
+    "subject4": {
+      "type": "string"
+    },
+    "quota": {
+      "type": "integer"
+    },
+    "student_subjects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student-subject.student-subject",
+      "mappedBy": "subject_option"
+    }
+  }
+}
