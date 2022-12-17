@@ -9,12 +9,11 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-i18n": "4.5.3",
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/strapi": "4.5.3",
-    "pg": "8.6.0",
+    "pg": "^8.6.0",
     "strapi-plugin-import-export-entries": "^1.18.0"
   },
   "author": {
